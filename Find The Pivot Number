@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int pivotInteger(int n) {
+        int x=sqrt((n*(n+1)/2)),b,a;
+        a=(x*(x+1))/2; //sum from 1 to x
+        b=(n*(n+1))/2-(x*(x-1))/2;
+        if(a == b){
+            return x;
+        }
+        return -1;
+    }
+};
